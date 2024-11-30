@@ -1,0 +1,111 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light pastel background */
+    color: #333;
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #ff69b4; /* Hot pink for a bold, warm look */
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.message p {
+    font-size: 1.6em;
+    color: #ff4500; /* A cheerful orange color */
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease-in;
+}
+
+.message h2 {
+    font-size: 1.6em;
+    color: #ff4500; /* A cheerful orange color */
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease-in;
+}
+
+.message h2{
+    font-size: 1.6em;
+    color: #ff4500; /* A cheerful orange color */
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease-in;
+}
+
+.message h3 {
+    font-size: 1.6em;
+    color: #ff4500; /* A cheerful orange color */
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease-in;
+}
+
+footer p {
+    font-size: 1.4em;
+    color: #ff69b4;
+    font-style: italic;
+    animation: fadeIn 2s ease-out;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .message p {
+        font-size: 1.4em;
+    }
+    .gift img {
+        max-width: 180px;
+    }
+    footer p {
+        font-size: 1.2em;
+    }
+}
